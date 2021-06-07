@@ -1,0 +1,68 @@
+.footer {
+    padding: 4.8rem 0;
+    background: $color-dark-green;
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+.footer__block1 {}
+
+.footer__logo__link {}
+
+.footer__logo {
+    width: 16rem;
+    height: 4rem;
+}
+
+.footer__ul {
+    margin-left: 0;
+    margin-top: 2.5rem;
+}
+
+.nav {}
+
+.nav__item {}
+
+.nav__link {}
+
+.nav__link--1 {}
+
+.nav__link--2 {}
+
+.footer__block2 {
+    margin-left: 12.5rem;
+}
+
+.footer__p {
+    opacity: .6 !important;
+}
+
+.tel {}
+
+.footer__block3 {
+    text-align: right;
+    margin-left: auto;
+}
+
+.svg__wrapper {
+    margin-bottom: 5.1rem;
+}
+
+
+.icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: $color-white;
+    transition: .3s;
+}
+
+.icon:not(:last-child) {
+    margin-right: 1.6rem;
+}
+
+.icon:hover {
+    color: $color-light-coral;
+    cursor: pointer;
+}
