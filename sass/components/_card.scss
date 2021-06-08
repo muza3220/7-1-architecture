@@ -38,13 +38,3 @@
     height: 5.6rem;
     margin-bottom: -22px;
 }
-
-.results--cards::after {
-    content: '';
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 6.2rem;
-    height: 6.2rem;
-    margin-top: 3.2rem;
-}

@@ -107,17 +107,10 @@
 }
 
 
-
-.results__card1::after {
-    background-image: url(../../images/girl-glasses.png);
-}
-
-.results__card2::after {
-    background-image: url(../../images/girl.png);
-}
-
-.results__card3::after {
-    background-image: url(../../images/uncle.png);
+.people-images {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-top: 3.2rem;
 }
 
 .card__p2 {
