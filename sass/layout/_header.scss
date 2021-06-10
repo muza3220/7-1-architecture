@@ -1,6 +1,18 @@
 .header {
     margin-top: 7.3rem;
     @include dis2x;
+
+    @include respond (tablets) {
+        margin-top: 6.4rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+        justify-content: space-between;
+    }
+
+    @include respond (phones) {
+        margin-top: 4.8rem;
+    }
 }
 
 .nav__link {
@@ -18,4 +30,150 @@
 .nav__link:hover,
 .nav__link:active {
     color: $color-light-coral;
+}
+
+
+.modal {
+    @include dis2x;
+}
+
+.modal__inp {
+    display: none;
+}
+
+
+
+.modal__lab {
+    display: inline-block;
+    width: 2rem;
+    height: 3px;
+    background: $color-white;
+    position: relative;
+
+    z-index: 20;
+    transition: 0s;
+    display: none;
+    margin-right: 0;
+
+    @media only screen and (max-width: 43.75em) {
+        display: inline-block;
+    }
+}
+
+.modal__lab::before,
+.modal__lab::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: $color-white;
+
+    position: absolute;
+    transition: .3s;
+}
+
+.modal__lab::before {
+    top: 5px;
+}
+
+.modal__lab::after {
+    top: -5px;
+}
+
+.modal__inp:checked+.modal__lab {
+    visibility: hidden;
+    display: inline-block;
+    margin-right: 300px;
+
+    @media only screen and (max-width: 43.75em) {
+        position: fixed;
+    }
+}
+
+.modal__inp:checked+.modal__lab::before {
+    visibility: visible;
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.modal__inp:checked+.modal__lab::after {
+    visibility: visible;
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+
+
+.modal__wrapper {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -100%;
+
+    height: 100vh;
+    width: 25.5rem;
+    background: $color-police-green;
+    z-index: 15;
+
+    position: fixed;
+
+    background-image: url(../images/circle-11-img.png);
+    background-size: 10rem 20rem;
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+    transition: .3s;
+
+    @media only screen and (max-width: 43.75em) {
+        display: inline-block;
+    }
+}
+
+.modal__inp:checked~.modal__wrapper {
+    right: 0;
+    opacity: 1;
+}
+
+.modal__ul {
+    margin-top: 11.2rem;
+    margin-left: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal__item {
+    margin-bottom: 2.4rem;
+}
+
+.modal__btn {
+    margin-top: 3.6rem;
+    margin-left: 4.8rem;
+}
+
+.modal__inp:checked~.modal__wrapper .modal__btn {
+    display: inline-block;
+}
+
+.hero__nav {
+    @media only screen and (max-width: 43.75em) {
+        position: absolute;
+        top: -100rem;
+    }
+}
+
+.nav__item {}
+
+.nav__link {}
+
+.nav__link--1 {}
+
+.nav__link--2 {}
+
+.btn {}
+
+.hero__btn {
+    @media only screen and (max-width: 43.75em) {
+        display: none;
+    }
 }

@@ -10,8 +10,13 @@
     transition: .3s;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover {
     color: $color-dark-green;
     background-color: $color-white;
+}
+
+.btn:active {
+    background: inherit !important;
+    color: #406367 !important;
+    border: 2px solid #406367 !important;
 }

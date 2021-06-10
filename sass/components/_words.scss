@@ -4,6 +4,20 @@
     font-size: 10rem;
     line-height: 10rem;
     color: $color-white;
+
+    @include respond (tablets) {
+        font-weight: bold;
+        font-size: 6.4rem;
+        line-height: 5.6rem;
+        text-align: center;
+        max-width: 39rem;
+    }
+
+    @include respond (phones) {
+        font-size: 4rem;
+        line-height: 4rem;
+        max-width: 24rem;
+    }
 }
 
 .h3 {
@@ -11,6 +25,11 @@
     font-size: 4.8rem;
     line-height: 4.8rem;
     color: $color-white;
+
+    @include respond (tablets) {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
 }
 
 .small--p {

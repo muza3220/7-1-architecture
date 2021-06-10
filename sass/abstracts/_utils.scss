@@ -1,9 +1,25 @@
 .hero {
-    min-height: 70rem;
-    background-image: url(../../images/circle-img.png), url(../../images/circle-2-img.png);
+    padding-bottom: 25rem;
+    background-image: url(../images/circle-img.png), url(../images/circle-2-img.png);
     background-repeat: no-repeat;
     background-size: 10rem 20rem, 35.8rem 10rem;
-    background-position: left 0 top 25rem, right 16.5rem bottom 0;
+    background-position: left 0 bottom 25rem, right 16.5rem bottom 0;
+
+
+
+    @include respond (tablets) {
+        background-image: none, url(../images/circle-2-img.png);
+        background-position: 0 0, left 50% bottom 0;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 25.6rem;
+    }
+
+    @include respond (phones) {
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-bottom: 19.7rem;
+    }
 }
 
 .hero__btn {
@@ -13,8 +29,19 @@
 .hero__content {
     margin-top: 12.9rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+
+    @include respond (tablets) {
+        margin-top: 11.2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include respond (phones) {
+        margin-top: 8rem;
+    }
+
     // @include dis2x;
 }
 
@@ -24,10 +51,28 @@
 
 .stick__1 {
     margin-bottom: 7.9rem;
+
+    @include respond (tablets) {
+        display: none !important;
+    }
 }
 
 .hero__p {
     max-width: 44.5rem;
+
+    @include respond (tablets) {
+        font-weight: 600 !important;
+        font-size: 1.5rem !important;
+        line-height: 2.8rem !important;
+        text-align: center !important;
+        max-width: 45.7rem;
+        margin-top: 2.4rem;
+    }
+
+    @include respond (phones) {
+        margin-top: 1.8rem;
+        max-width: 32.7rem;
+    }
 }
 
 
@@ -39,24 +84,80 @@
     background-position: right 0 bottom 0;
     background-color: $color-sacramento-green;
     padding: 14rem 0;
+
+    @include respond (tablets) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        background-position: right 0 top 0;
+    }
+
+    @include respond (phones) {
+        padding-top: 6.4rem;
+        padding-bottom: 6.4rem;
+    }
 }
 
 .build__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include respond (tablets) {
+        padding-left: 8.3rem;
+        padding-right: 8.3rem;
+        flex-direction: column;
+    }
+
+    @include respond (phones) {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
 }
 
 .stick__2 {
     background: $color-light-coral !important;
     margin-bottom: 5.4rem;
+
+    @include respond (tablets) {
+        margin-bottom: 3.2rem;
+    }
 }
 
 .build__h3 {
     max-width: 44.5rem;
+
+    @include respond (phones) {
+        max-width: 24rem;
+    }
+}
+
+.build__right__wrapper {
+    @include respond (tablets) {
+        padding-left: 9.5rem;
+        padding-top: 6.4rem;
+    }
+
+    @include respond (phones) {
+        padding-top: 11.4rem;
+        padding-left: 0;
+
+    }
+}
+
+.build__right--blocks {
+    @include respond (phones) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .build__right--blocks:not(:last-child) {
     margin-bottom: 3.2rem;
+
+    @include respond (phones) {
+        margin-bottom: 13.6rem;
+    }
 }
 
 .build__right__block1::before {
@@ -74,11 +175,19 @@
 .block__p1 {
     color: $color-light-coral !important;
     margin-bottom: 1.6rem;
+
+    @include respond (phones) {
+        margin-bottom: 8px;
+    }
 }
 
 .block__p2 {
     max-width: 44.5rem;
     opacity: .8;
+
+    @include respond (tablets) {
+        max-width: none;
+    }
 }
 
 
@@ -88,12 +197,30 @@
     background-size: 14.7rem 10rem, 20rem 10rem;
     background-position: left 0 top 0, right 0 bottom 0;
     padding: 14rem 0;
+
+    @include respond (tablets) {
+        padding-top: 10rem;
+        padding-bottom: 5.2rem;
+        padding-left: 8.3rem;
+        padding-right: 8.3rem;
+    }
+
+    @include respond (phones) {
+        padding-top: 14rem;
+        padding-bottom: 16.4rem;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
 }
 
 .result__h3 {
     max-width: 93.2rem;
     margin: 0 auto;
     text-align: center;
+
+    @include respond (tablets) {
+        max-width: 100%;
+    }
 }
 
 .success__for__color {
@@ -104,6 +231,12 @@
     margin-top: 9.2rem;
     display: flex;
     justify-content: space-between;
+
+    @include respond (tablets) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4.8rem;
+    }
 }
 
 
@@ -118,20 +251,49 @@
     margin-bottom: 2px;
     color: $color-rapture-blue !important;
     font-weight: bold !important;
+
+    @include respond (tablets) {
+        margin-top: 1.6rem;
+    }
 }
 
 .card__p3 {
     font-weight: 500;
     font-style: italic;
+
+    @include dis3x;
+
+    @include respond (tablets) {
+        margin-bottom: -1.6rem;
+    }
 }
 
 .starter {
-    background-image: url(../../images/circle-5-img.svg);
+    background-image: url(../images/circle-5-img.svg);
     background-size: 20rem 14.4rem;
     background-repeat: no-repeat;
     background-position: left 0 bottom 0;
     padding: 7.6rem 0;
     background-color: $color-light-coral;
+
+    @include respond (tablets) {
+        padding-left: 8.3rem;
+        padding-right: 8.3rem;
+        background-position: left 0 top 7.8rem;
+    }
+
+    @media only screen and (max-width: 45.625em) {
+        background-position: left 0 top 11.6rem;
+    }
+
+    @include respond (phones) {
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-top: 8.3rem;
+        padding-bottom: 8.3rem;
+        background-position: left 0 top 18.5rem;
+    }
+
 }
 
 .starter__wrapper {
@@ -141,10 +303,26 @@
     max-width: 91.7rem;
     margin-left: auto;
     margin-right: auto;
+
+    @media only screen and (max-width: 45.625em) {
+        flex-direction: column;
+    }
 }
 
 .starter__h3 {
     color: $color-sacramento-green !important;
+
+    @media only screen and (max-width: 45.625em) {
+        margin-bottom: 2.4rem;
+    }
+
+    @include respond (phones) {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+        max-width: 33rem;
+    }
 }
 
 .started__btn {

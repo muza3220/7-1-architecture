@@ -19,11 +19,26 @@
           <img class="hero__img" src="./images/myteam-logo.png"
             srcset="./images/myteam-logo.png 1x, ./images/myteam-logo@2x.png 2x" width="160" height="40" alt="logo">
         </a>
-        <ul class="nav">
+        <ul class="nav hero__nav">
           <li class="nav__item"><a href="#" class="nav__link nav__link--1">home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link nav__link--2">about</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link nav__link--2">about</a></li>
         </ul>
-        <a href="#" class="btn hero__btn">contact us</a>
+        <a href="contact.html" class="btn hero__btn">contact us</a>
+
+
+        <div class="modal">
+          <input class="modal__inp" type="checkbox" id="modal">
+          <label class="modal__lab" for="modal"></label>
+          <div class="modal__wrapper">
+            <ul class="nav modal__ul">
+              <li class="nav__item modal__item"><a href="#" class="nav__link nav__link--1">home</a></li>
+              <li class="nav__item"><a href="about.html" class="nav__link nav__link--2">about</a></li>
+            </ul>
+            <a href="contact.html" class="btn hero__btn modal__btn">contact us</a>
+          </div>
+        </div>
+
+
       </header>
 
       <div class="hero__content">
@@ -131,7 +146,7 @@
         <div class="starter__wrapper">
 
           <h3 class="h3 starter__h3">Ready to get started?</h3>
-          <a href="#" class="btn started__btn">contact us</a>
+          <a href="contact.html" class="btn started__btn">contact us</a>
 
         </div>
       </div>
@@ -142,6 +157,8 @@
 
   <footer class="footer">
     <div class="container">
+
+
       <div class="footer__wrapper">
 
         <div class="footer__block1">
@@ -151,7 +168,7 @@
           </a>
           <ul class="footer__ul nav">
             <li class="nav__item"><a href="#" class="nav__link nav__link--1">home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link nav__link--2">about</a></li>
+            <li class="nav__item"><a href="about.html" class="nav__link nav__link--2">about</a></li>
           </ul>
         </div>
 
@@ -179,6 +196,50 @@
         </div>
 
       </div>
+
+
+
+      <div class="tablets__footer__wrapper">
+
+        <div class="footer__block1">
+          <a class="footer__logo__link" href="#">
+            <img class="footer__logo" src="./images/myteam-logo.png"
+              srcset="./images/myteam-logo.png 1x, ./images/myteam-logo@2x.png 2x" width="160" height="40" alt="logo">
+          </a>
+          <ul class="footer__ul nav">
+            <li class="nav__item"><a href="#" class="nav__link nav__link--1">home</a></li>
+            <li class="nav__item"><a href="about.html" class="nav__link nav__link--2">about</a></li>
+          </ul>
+
+          <div class="svg__wrapper">
+            <svg class="icon" width="24" height="24">
+              <use xlink:href="images/sprites.svg#facebook"></use>
+            </svg>
+            <svg class="icon" width="24" height="24">
+              <use xlink:href="images/sprites.svg#path"></use>
+            </svg>
+            <svg class="icon" width="24" height="20">
+              <use xlink:href="images/sprites.svg#twitter"></use>
+            </svg>
+          </div>
+
+        </div>
+
+        <div class="footer__block2">
+          <p class="middle--p footer__p">987 Hillcrest Lane</p>
+          <p class="middle--p footer__p">Irvine, CA</p>
+          <p class="middle--p footer__p">California 92714</p>
+          <p class="middle--p footer__p">Call Us : &nbsp;<a class="middle--p footer__p"
+              href="tel:949-833-7432">949-833-7432</a></p>
+
+          <p class="middle--p footer__p footer__last__p">Copyright 2020. All Rights Reserved</p>
+
+        </div>
+
+
+      </div>
+
+
     </div>
   </footer>
 

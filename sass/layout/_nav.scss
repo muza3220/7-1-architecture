@@ -2,4 +2,8 @@ ul {
     list-style-type: none;
     @include dis2x;
     margin-left: 8rem;
+
+    @include respond (tablets) {
+        margin-left: 4.8rem;
+    }
 }

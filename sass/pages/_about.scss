@@ -1,0 +1,340 @@
+.hero__about {
+    padding-bottom: 12rem;
+    background-image: url(../images/circleo-6-img.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem 20rem;
+    background-position: 100% 100%;
+
+
+    @include respond (tablets) {
+        padding-bottom: 11.2rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+        background-position: 100% 135%;
+    }
+
+    @include respond (phones) {
+        padding-left: 9px;
+        padding-right: 9px;
+        padding-bottom: 10.8rem;
+    }
+}
+
+.stick__about {
+    margin-bottom: 4rem;
+
+    @include respond (tablets) {
+        display: none;
+    }
+}
+
+.hero__p__about {
+    max-width: 73rem;
+
+    @include respond (tablets) {
+        max-width: 45.7rem;
+    }
+}
+
+
+
+
+.meeting {
+    padding: 14rem 0;
+    background-image: url(../images/circle-7-img.svg), url(../images/square-2-img.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem 20rem, 14.7rem 10rem;
+    background-position: left 0 top 0, 100% 100%;
+    background-color: $color-jungle-green;
+
+    @include respond (tablets) {
+        padding-top: 10rem;
+        padding-bottom: 12.8rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    @include respond (phones) {
+        background-position: left 0 top -10rem, 100% 100%;
+        padding-top: 8.8rem;
+        padding-bottom: 11.6rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+}
+
+.meeting__h3 {
+    text-align: center;
+}
+
+.cards__ul {
+    margin-top: 6.4rem;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond (tablets) {
+        justify-content: space-around;
+    }
+}
+
+.meeting--cards {
+    padding-top: 3.2rem;
+    padding-bottom: 5.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35rem;
+    background-color: $color-sacramento-green;
+
+    position: relative;
+
+    @include respond (tablets) {
+        max-width: 28.1rem;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+        max-width: 32.7rem;
+    }
+}
+
+.person__names {
+    margin-top: 1.6rem;
+    margin-bottom: 0;
+}
+
+
+.big__step__wrapper {
+    cursor: pointer;
+    width: 5.6rem;
+    height: 5.6rem;
+    background: $color-light-coral;
+    border-radius: 50%;
+    @include dis3x;
+
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+    z-index: 11;
+}
+
+.big__step__inp {
+    display: none;
+}
+
+.big__step__wrapper:hover {
+    background-color: $color-rapture-blue;
+}
+
+.big__step__inp:checked+.big__step__lab .big__step__wrapper {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.extra__cards {
+    width: 100%;
+    height: 100%;
+    background-color: $color-dark-green;
+
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+
+    padding-top: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond (tablets) {
+        left: 0;
+        top: 20%;
+        opacity: 0;
+    }
+}
+
+.cards__items:nth-child(n+4) {
+    margin-top: 7.6rem;
+
+    @include respond (tablets) {
+        margin-top: 0;
+    }
+
+    @media only screen and (max-width: 43.75em) {
+        margin-top: 0;
+    }
+}
+
+.cards__items:nth-child(n+2) {
+    @media only screen and (max-width: 43.75em) {
+        margin-top: 5.2rem;
+    }
+
+}
+
+.cards__items:nth-child(n+3) {
+    @include respond (tablets) {
+        margin-top: 7.6rem;
+    }
+}
+
+.big__step__inp:checked~.extra__cards {
+    // display: inline-block;
+    width: 100%;
+    height: 100%;
+    // z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 1;
+
+    @include respond (tablets) {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.extra__cards__p2 {
+    max-width: 25.4rem;
+    margin-top: 8px;
+    margin-bottom: 2.4rem;
+    text-align: center;
+}
+
+.extra__card2 {
+    left: 0;
+}
+
+.extra__card3 {
+    left: 20%;
+
+    @include respond (tablets) {
+        top: 20%;
+        left: 0;
+    }
+}
+
+.extra__card4 {
+    top: 20%;
+    left: -20%;
+
+    @include respond (tablets) {
+        top: 20%;
+        left: 0;
+    }
+}
+
+.extra__card5 {
+    left: 0;
+    top: 20%;
+}
+
+.extra__card6 {
+    top: 20%;
+    left: 20%;
+
+    @include respond (tablets) {
+        top: 20%;
+        left: 0;
+    }
+}
+
+
+
+.clients {
+    background-image: url(../images/circle-8-img.png);
+    background-repeat: no-repeat;
+    background-size: 20rem 20rem;
+    background-position: left calc(50% - 52rem), top 0;
+    background-color: $color-sacramento-green;
+    padding-top: 14rem;
+    padding-bottom: 15.1rem;
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
+
+    @include respond (tablets) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        background-position: left 0 top -10rem;
+    }
+
+    @include respond (phones) {
+        padding-top: 8.8rem;
+        padding-bottom: 8.8rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+        background-position: left -10rem top -10rem;
+    }
+}
+
+.clients__h3 {
+    text-align: center;
+    margin-bottom: 7rem;
+}
+
+.brends__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 60.5em) {
+        flex-direction: column;
+    }
+}
+
+.brend__imgs {
+    display: inline-block;
+
+    @media only screen and (max-width: 60.5em) {
+        margin: 0 !important;
+        margin-bottom: 5.6rem !important;
+    }
+
+}
+
+.brend__imgs:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.brend__imgs:last-child {
+    @media only screen and (max-width: 81.9375em) {
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+
+    @media only screen and (max-width: 60.5em) {
+        margin-bottom: 0 !important;
+    }
+}
+
+.brend__imgs:nth-child(4) {
+    @media only screen and (max-width: 81.9375em) {
+        margin-right: 0;
+    }
+
+    @media only screen and (max-width: 73.3125em) {
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+}
+
+.brend__imgs:nth-child(3) {
+    @media only screen and (max-width: 73.3125em) {
+        margin-right: 0;
+    }
+}
+
+.brend__imgs {
+    @media only screen and (max-width: 60.5em) {
+        display: block;
+    }
+}
