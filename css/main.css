@@ -10,8 +10,8 @@
   .hero {
     background-image: none, url(../images/circle-2-img.png);
     background-position: 0 0, left 50% bottom 0;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-bottom: 25.6rem;
   }
 }
@@ -1105,6 +1105,13 @@ img {
 @media only screen and (max-width: 43.75em) {
   .modal__inp:checked + .modal__lab {
     position: fixed;
+    right: -26rem !important;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .modal__inp:checked + .modal__lab {
+    right: -27.6rem !important;
   }
 }
 
@@ -1821,6 +1828,41 @@ a {
   padding-bottom: 12rem;
 }
 
+@media only screen and (max-width: 82.875em) {
+  .contact__hero {
+    background-image: none, url(../images/circle-10-img.png);
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact__hero {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 11.2rem;
+    background-image: url(../images/circle-9-img.png), url(../images/circle-10-img.png);
+  }
+}
+
+@media only screen and (max-width: 47.8125em) {
+  .contact__hero {
+    background-position: top 21.5rem left 0, right 0 bottom -10rem;
+  }
+}
+
+@media only screen and (max-width: 41.25em) {
+  .contact__hero {
+    background-image: none, url(../images/circle-10-img.png);
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__hero {
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 8.8rem;
+  }
+}
+
 .contact__wrapper {
   margin-top: 12.4rem;
   display: -webkit-box;
@@ -1844,7 +1886,13 @@ a {
   }
 }
 
-.contact__contetn .hero__h1__contact {
+@media only screen and (max-width: 37.5em) {
+  .contact__wrapper {
+    margin-top: 8rem;
+  }
+}
+
+.hero__h1__contact {
   font-weight: bold;
   font-size: 6.4rem;
   line-height: 10rem;
@@ -1852,14 +1900,14 @@ a {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .contact__contetn .hero__h1__contact {
+  .hero__h1__contact {
     line-height: 5.6rem;
     text-align: center;
-    margin-right: 0;
+    margin: 0 auto;
   }
 }
 
-.contact__contetn .contact__h2 {
+.contact__h2 {
   font-weight: bold;
   font-size: 3.2rem;
   line-height: 4.8rem;
@@ -1868,13 +1916,13 @@ a {
 }
 
 @media only screen and (max-width: 56.25em) {
-  .contact__contetn .contact__h2 {
+  .contact__h2 {
     margin-top: 2.4rem;
     text-align: center;
   }
 }
 
-.contact__contetn .contact--ps {
+.contact--ps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1883,7 +1931,7 @@ a {
           align-items: center;
 }
 
-.contact__contetn .contact--ps::before {
+.contact--ps::before {
   content: '';
   display: inline-block;
   background-repeat: no-repeat;
@@ -1894,32 +1942,45 @@ a {
   margin-right: 2.3rem;
 }
 
-.contact__contetn .contact__p1 {
+.contact__p1 {
   margin-top: 3.2rem;
 }
 
-.contact__contetn .contact__p1::before {
+.contact__p1::before {
   background-image: url(../images/human.svg);
 }
 
-.contact__contetn .contact__p2 {
+.contact__p2 {
   margin-top: 8px;
 }
 
-.contact__contetn .contact__p2::before {
+.contact__p2::before {
   background-image: url(../images/setting.svg);
 }
 
-.contact__contetn .contact__p3 {
+.contact__p3 {
   margin-top: 8px;
 }
 
-.contact__contetn .contact__p3::before {
+.contact__p3::before {
   background-image: url(../images/grafic.svg);
 }
 
 .contact__form {
   width: 54rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .contact__form {
+    margin-top: 6.4rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__form {
+    width: 32.5rem;
+    margin-top: 5.6rem;
+  }
 }
 
 .contact--inputs {
