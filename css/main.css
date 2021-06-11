@@ -1200,6 +1200,35 @@ img {
   }
 }
 
+.curtain {
+  width: calc(100% - 22.5rem);
+  position: fixed;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.curtain1 {
+  height: 50%;
+  top: -100%;
+}
+
+.modal__inp:checked ~ .curtain1 {
+  top: 0;
+  left: 0;
+}
+
+.curtain2 {
+  height: 50%;
+  bottom: -100%;
+}
+
+.modal__inp:checked ~ .curtain2 {
+  bottom: 0;
+  left: 0;
+}
+
 ul {
   list-style-type: none;
   display: -webkit-box;
