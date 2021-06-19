@@ -1787,41 +1787,10 @@ a {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 79.375em) {
-  .brends__wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .brend__wrapper__links {
+  width: 20rem;
   text-align: center;
-  display: inline-block;
-}
-
-@media only screen and (max-width: 79.375em) {
-  .brend__wrapper__links {
-    width: 30rem;
-  }
-}
-
-@media only screen and (max-width: 79.375em) {
-  .brend__wrapper__links:nth-child(n + 4) {
-    margin-top: 4rem;
-  }
-}
-
-@media only screen and (max-width: 78.6875em) {
-  .brend__wrapper__links:nth-child(3) {
-    margin-top: 4rem;
-  }
-}
-
-@media only screen and (max-width: 59.9375em) {
-  .brend__wrapper__links:nth-child(2) {
-    margin-top: 4rem;
-  }
+  display: block;
 }
 
 .contact__hero {
